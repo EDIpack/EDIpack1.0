@@ -1,8 +1,11 @@
-# EDIpack: A *parallel* Exact Diagonalization solver for Quantum Impurity problems
+# EDIpack1.0: A *parallel* Exact Diagonalization solver for Quantum Impurity problems
 
+This is the version 1.0 of EDIpack. 
+A largely updated version can be found here with version 2.0: [EDIpack](https://github.com/EDIpack/EDIpack2.0)
 
-A Lanczos based solver for generic quantum impurity models exploiting distributed memory MPI parallelisation. This software focuses on the *normal* case (as opposed to superconducting or spin non-conserving cases) including long range magnetic ordering and arbitrary unit cells. 
-See [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261). 
+The old version 
+A Lanczos based solver for generic quantum impurity models exploiting distributed memory MPI parallelisation. This software focuses on the solution in presence of $SU(2)$ or just $U(1)$-spin symmetry, thus including long range magnetic ordering and also arbitrary unit cells. 
+The code is presented here [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261). 
 
 ### Dependencies
 
@@ -11,7 +14,7 @@ The code is written around the SciFortran library. Dependencies are:
 * gfortran > 9.0.0 **OR** ifort  > 13.0
 * cmake > 3.0.0    
 * [MPI](https://github.com/open-mpi/ompi)
-* [SciFortran](https://github.com/aamaricci/SciFortran)
+* [SciFortran](https://github.com/SciFortran/SciFortran)
 
 
 ### Installation
@@ -20,7 +23,7 @@ Installation is  available using CMake.
 
 Clone the repo:
 
-`git clone https://github.com/aamaricci/EDIpack EDIpack`
+`git clone https://github.com/EDIpack/EDIpack1.0 EDIpack1.0`
 
 and from the just created directory make a standard out-of-source CMake compilation:
 
@@ -63,6 +66,10 @@ The library is removed with the command:
 from the same building directory as for the installation part. 
 
 
+### CREDITS
+Using this code or any derivate of it please consider to cite the corresponding article [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261) 
+
+
 
 For any information contact the author as:  
 adriano DOT amaricci @ gmail DOT com
@@ -84,7 +91,7 @@ GNU LGPL for more details.
 
 You should have received a copy of the GNU LGPL along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Using this code please consider to cite the corresponding article [arxiv.org/2105.06806](https://arxiv.org/abs/2105.06806)
+Using this code please consider to cite the corresponding article [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261) 
 
 --
 
