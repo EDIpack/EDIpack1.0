@@ -1,10 +1,9 @@
 # EDIpack1.0: A *parallel* Exact Diagonalization solver for Quantum Impurity problems
 
 This is the version 1.0 of EDIpack. 
-A largely updated version can be found here with version 2.0: [EDIpack](https://github.com/EDIpack/EDIpack2.0)
+A largely updated version can be found here: [EDIpack](https://github.com/EDIpack/EDIpack)
 
-The old version 
-A Lanczos based solver for generic quantum impurity models exploiting distributed memory MPI parallelisation. This software focuses on the solution in presence of $SU(2)$ or just $U(1)$-spin symmetry, thus including long range magnetic ordering and also arbitrary unit cells. 
+The 1.0 is a Lanczos based solver for generic quantum impurity models exploiting distributed memory MPI parallelisation. This software focuses on the solution in presence of $SU(2)$ or just $U(1)$-spin symmetry, thus including long range magnetic ordering and also arbitrary unit cells. 
 The code is presented here [j.cpc.2021.108261](https://doi.org/10.1016/j.cpc.2021.108261). 
 
 ### Dependencies
